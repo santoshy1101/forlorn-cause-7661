@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
-## Available Scripts
+##  Contributors 
+ Santosh Yadav.
+ 
+ swarup kadoli.
+ 
+ Abhishek Chatterjee.
+ 
+ Pranay Jadhao.
+ 
+ Mohammad Sahil.
+ 
+##  Steps to follow
+git clone 
 
-In the project directory, you can run:
+npm i
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Project Name 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hello everyone, this is a Readme for our construct week project that has been completed successfully within the duration of 5 days. It was really greate experience for us. Below  described the Features of our project.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deployed Links:
+- https://
+ 
+ 
 
-### `npm run eject`
+## Project Details:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We got a task to make a functional clone website of `https://www.asos.com/`. ASOS Plc (ASOS) is a fashion online retailer that offers lifestyle products. The website
+can be used to discover the latest fashion trends with ASOS. Shop the new collection of clothing, footwear, accessories, beauty products and more. we tried our best to clone the website from scratch based on the knowledge gained till unit-6 of Journey at Masai School.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Original LOGO :
+   <img width="50%" src="">     
+- Our LOGO :
+   <img width="50%" src="">
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Tech-Stack:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React.js
+- React Routing
+- React Redux
+- React Redux Thunk
+- CSS
+- HTML
+- Chakra UI Library
+- Firebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Glimpse and Screenshots of our cloned website:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Navbar:
 
-### Analyzing the Bundle Size
+- This is the landing page of our website. Clicking an option on the Navbar will redirect to the respective page.
+<img width="50%" src="">
+- 
+<img width="50%" src="">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Home Page:
 
-### Making a Progressive Web App
+- The images on the home page are linked to all Pages. Hence clicking on it will ensure successful redirection to the next Page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 
+<img width="50%" src="">
 
-### Advanced Configuration
+## Footer bar:
+- Here we have functions such as Indiamart official social media link, contacts, policies, and information. account, and address.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ 
+- 
+<img width="50%" src="">
+## Signup:
 
-### Deployment
+- Here we have a Modal Function on any page when users click on signup they get a popup on the screen  .
+- User can Create account ny filling Signup Form
+- 
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="50%" src="">
 
-### `npm run build` fails to minify
+## Login page:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Here we have a Modal Function on any page when users click on Login they get a popup on the screen. If the user is registered with the website, only then he/she can log in with their respective email id & password.
+- User can Login with regestered email ID
+- 
+<br />
+<img width="50%" src="">
+
+## Product Page:
+
+
+<img width="50%" src="">
+
+## Pdoduct Detailes Page:
+
+ 
+
+<img width="50%" src="">
+<img width="50%" src="">
+<img width="50%" src="">
+
+## Admin:
+
+- 
+
+<img width="50%" src="">
+
+- Technically Help is the last page developed for the best User Interface UI smooth Operations.
