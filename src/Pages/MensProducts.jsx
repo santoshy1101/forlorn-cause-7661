@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import "./Mens.css"
-import { Box, Flex, Heading, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text, Wrap, WrapItem } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text, Wrap, WrapItem } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
+import { FaRegHeart } from "react-icons/fa";
 
 const MensProducts = () => {
 
@@ -9,15 +10,56 @@ const MensProducts = () => {
   const [max,setMax]=useState(800)
   console.log('min:', min)
   console.log('max:', max)
-
+  let arr=[
+    {
+      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
+      name:"back print in gray",
+      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
+      price:"26.51",
+      strick:"49.00",
+      dis:"-14%"
+    },
+    {
+      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
+      name:"back print in gray",
+      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
+      price:"26.52",
+      strick:"49.00",
+      dis:"-14%"
+    },
+    {
+      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
+      name:"back print in gray",
+      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
+      price:"26.53",
+      strick:"49.00",
+      dis:"-14%"
+    },
+    {
+      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
+      name:"back print in gray",
+      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
+      price:"26.54",
+      strick:"49.00",
+      dis:"-14%"
+    },
+    {
+      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
+      name:"back print in gray",
+      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
+      price:"26.55",
+      strick:"49.00",
+      dis:"-14%"
+    }
+  ]
   return (
     <Box className='Container' backgroundColor="white" >
       <Box className="headBox" h="80px" >
         <Heading fontSize="25px" >Bestsellers clothing</Heading>
       </Box>
-      <SimpleGrid columns={6} spacing="30px" className='sortBox'>
+      {/* <SimpleGrid display={{base:"none", md:"grid"}} columns={{md:4,lg:5,xl:6}} spacing="30px" className='sortBox' p={{base:"10px", md:"20px"}}>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Sort</Text>
               <ChevronDownIcon />
@@ -31,13 +73,13 @@ const MensProducts = () => {
           </MenuList>
         </Menu>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Category</Text>
               <ChevronDownIcon />
             </Flex>
           </MenuButton>
-          <MenuList>
+          <MenuList borderRadius='none' >
             <MenuItem>Suits & Tailoring(310)</MenuItem>
             <MenuItem>Jeans & Trousers(185)</MenuItem>
             <MenuItem>Tops(180)</MenuItem>
@@ -48,7 +90,7 @@ const MensProducts = () => {
           </MenuList>
         </Menu>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Price Range</Text>
               <ChevronDownIcon />
@@ -75,13 +117,13 @@ const MensProducts = () => {
           </MenuList>
         </Menu>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Product Type</Text>
               <ChevronDownIcon />
             </Flex>
           </MenuButton>
-          <MenuList>
+          <MenuList borderRadius='none' >
             <MenuItem>Suit Jackets(191)</MenuItem>
             <MenuItem>Suit Pants(155)</MenuItem>
             <MenuItem>Shirts(144)</MenuItem>
@@ -107,13 +149,13 @@ const MensProducts = () => {
           </MenuList>
         </Menu>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Color</Text>
               <ChevronDownIcon />
             </Flex>
           </MenuButton>
-          <MenuList>
+          <MenuList borderRadius='none' >
             <MenuItem>Dark(210)</MenuItem>
             <MenuItem>Light(245)</MenuItem>
             <MenuItem>Tranding</MenuItem>
@@ -122,13 +164,13 @@ const MensProducts = () => {
           </MenuList>
         </Menu>
         <Menu>
-          <MenuButton  transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
+          <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
               <Text>Style</Text>
               <ChevronDownIcon />
             </Flex>
           </MenuButton>
-          <MenuList>
+          <MenuList borderRadius='none' >
             <MenuItem>Skinny(199)</MenuItem>
             <MenuItem>Regular(153)</MenuItem>
             <MenuItem>Slim(110)</MenuItem>
@@ -148,6 +190,31 @@ const MensProducts = () => {
             <MenuItem>Tuxedo(9)</MenuItem>
           </MenuList>
         </Menu>
+      </SimpleGrid> */}
+      <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="10px" p={{base:"10px", md:"20px"}} >
+        {arr.map((el)=>(
+          <Box key={el.price}>
+            <Box position="relative" >
+              <Image src={el.image} alt='Products' w="100%" />
+              <Box backgroundColor="white" fontSize="12px" p="3px 8px" color="red" position="absolute" top="20px"  >
+                  <Text>{el.dis}</Text>
+              </Box>
+              <Box className='tag'  >
+                  <Text>SELLING FAST</Text>
+              </Box>
+              <Box position="absolute" className='heart' >
+                <FaRegHeart />
+              </Box>
+            </Box>
+            <Text className='productName'>{el.brif}</Text>
+            <Text className='productName'>{el.name}</Text>
+            <Flex>
+              <Text color="rgb(241, 0, 0)" >{el.strick}</Text>
+              <Text color="rgb(100, 100, 100)" className='mainPrice'>{el.price}</Text>
+            </Flex>
+
+          </Box>
+        ))}
       </SimpleGrid>
     </Box>
   )
