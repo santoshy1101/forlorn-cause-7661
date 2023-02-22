@@ -1,0 +1,22 @@
+.Container{
+    background-color: white;
+    color: black;
+}
+.headBox{
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sortBox{
+    background-color: #f1f1f1;
+    padding: 20px;   
+}
+.menubutton{
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+.menulist{
+    background-color: white;
+    color: rgb(241, 0, 0);
+}
