@@ -1,5 +1,5 @@
-import Bag from "./Pages/Bag"
 
+import Bag from "./Pages/Bag"
 
 function App() {
   return (
