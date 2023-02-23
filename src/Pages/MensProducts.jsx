@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Mens.css"
-import { Box, Flex, Heading, Image, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text, Wrap, WrapItem } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Heading, Image, Link, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text, Wrap, WrapItem } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { FaRegHeart } from "react-icons/fa";
 
@@ -16,7 +16,7 @@ const MensProducts = () => {
       name:"back print in gray",
       brif:"Jack & Jones Originals oversized t-shirt with butterfly",
       price:"26.51",
-      strick:"49.00",
+      strick:"12.22",
       dis:"-14%"
     },
     {
@@ -24,7 +24,7 @@ const MensProducts = () => {
       name:"back print in gray",
       brif:"Jack & Jones Originals oversized t-shirt with butterfly",
       price:"26.52",
-      strick:"49.00",
+      strick:"",
       dis:"-14%"
     },
     {
@@ -40,7 +40,7 @@ const MensProducts = () => {
       name:"back print in gray",
       brif:"Jack & Jones Originals oversized t-shirt with butterfly",
       price:"26.54",
-      strick:"49.00",
+      strick:"",
       dis:"-14%"
     },
     {
@@ -57,7 +57,7 @@ const MensProducts = () => {
       <Box className="headBox" h="80px" >
         <Heading fontSize="25px" >Bestsellers clothing</Heading>
       </Box>
-      {/* <SimpleGrid display={{base:"none", md:"grid"}} columns={{md:4,lg:5,xl:6}} spacing="30px" className='sortBox' p={{base:"10px", md:"20px"}}>
+      <SimpleGrid display={{base:"none", md:"grid"}} columns={{md:4,lg:5,xl:6}} spacing="20px" className='sortBox' p={{base:"10px", md:"20px"}}>
         <Menu>
           <MenuButton transition='all 0.2s' className='menubutton' w="100%" p="10px 20px">
             <Flex justifyContent="space-between">
@@ -190,29 +190,75 @@ const MensProducts = () => {
             <MenuItem>Tuxedo(9)</MenuItem>
           </MenuList>
         </Menu>
-      </SimpleGrid> */}
+      </SimpleGrid>
+      <Accordion display={{base:"flex", md:"none"}} className='sortBox' allowToggle>
+          <AccordionItem width="50%" borderBottom="1px solid #ddd" >
+            <h2>
+              <AccordionButton>
+                <Box as="span" textAlign='left'>
+                  Sort
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <Box p="5px 0px"><Link >Recommended</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >What's New</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Price high to low</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Price low to high</Link></Box>
+              <hr />
+            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem width="50%" >
+            <h2>
+              <AccordionButton>
+                <Box as="span" textAlign='left'>
+                  Filter
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+              <Box p="5px 0px"><Link >Lorem ipsum dolor sit amet, consectetur</Link></Box>
+              <hr />
+            </AccordionPanel>
+          </AccordionItem>
+      </Accordion>
       <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="10px" p={{base:"10px", md:"20px"}} >
         {arr.map((el)=>(
-          <Box key={el.price}>
+          <Box key={el.price} pb="10px">
             <Box position="relative" >
               <Image src={el.image} alt='Products' w="100%" />
-              <Box backgroundColor="white" fontSize="12px" p="3px 8px" color="red" position="absolute" top="20px"  >
+              <Box backgroundColor="white" fontSize={{base:"10px", sm:"11px", md:"12px"}} p="3px 8px" color="red" position="absolute" top="20px"  >
                   <Text>{el.dis}</Text>
               </Box>
-              <Box className='tag'  >
+              <Box className='tag' right="0%" bottom={{base:"20%", md:"15%"}} fontSize={{base:"9px", sm:"11px", md:"13px",lg:"14px"}} >
                   <Text>SELLING FAST</Text>
               </Box>
-              <Box position="absolute" className='heart' >
+              <Box position="absolute" right="1%" bottom="2%" fontSize={{base:"12px", md:"14px",lg:"15px"}} className='heart' >
                 <FaRegHeart />
               </Box>
             </Box>
-            <Text className='productName'>{el.brif}</Text>
-            <Text className='productName'>{el.name}</Text>
+            <Text className='productName' fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.brif}</Text>
+            <Text className='productName' fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.name}</Text>
             <Flex>
-              <Text color="rgb(241, 0, 0)" >{el.strick}</Text>
-              <Text color="rgb(100, 100, 100)" className='mainPrice'>{el.price}</Text>
+              <Text p="0px 15px 0px 5px" textDecoration="line-through" fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(255, 0, 85)" >{el.strick!=""?"$"+el.strick:null}</Text>
+              <Text fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(100, 100, 100)" className='mainPrice'>${el.price}</Text>
             </Flex>
-
           </Box>
         ))}
       </SimpleGrid>
