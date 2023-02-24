@@ -1,0 +1,25 @@
+
+.mainPrice{
+    font-weight: 700;
+    font-family: sans-serif, futura-pt;
+    color: rgb(70, 70, 70);
+}
+.sizeSelect{
+    font-weight: 700;
+    font-family: sans-serif, futura-pt;
+    color: rgb(48, 48, 48);
+}
+.bagButton{
+    color: white;
+    font-weight: 600;
+    border-radius: 0px;
+    width: 80%;
+}
+.heart{
+    vertical-align: baseline;
+    background: rgb(226, 226, 226);
+    color: rgb(255, 0, 34);
+    border-radius: 100%;
+    width: 40px;
+    font-weight: 700;
+}

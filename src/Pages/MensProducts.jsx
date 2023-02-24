@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import "./Mens.css"
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Heading, Image, Link, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text, Wrap, WrapItem } from '@chakra-ui/react'
+import "../Styles/Mens.css"
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Heading, Image, Link, Menu, MenuButton, MenuItem, MenuList, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, SimpleGrid, Text } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import { FaRegHeart } from "react-icons/fa";
 
@@ -10,50 +10,231 @@ const MensProducts = () => {
   const [max,setMax]=useState(800)
   console.log('min:', min)
   console.log('max:', max)
-  let arr=[
+  let data=[
     {
-      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
-      name:"back print in gray",
-      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
-      price:"26.51",
-      strick:"12.22",
-      dis:"-14%"
+      productLink: "https://www.asos.com/asos-design/asos-design-relaxed-t-shirt-in-grey-with-floral-outline-back-print/prd/203353303?colourWayId=203353314&cid=16691",
+      ProductName: "ASOS DESIGN relaxed t-shirt in grey with floral outline back print",
+      price: 18,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-relaxed-t-shirt-in-grey-with-floral-outline-back-print/203353303-1-belgianblock?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
     },
     {
-      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
-      name:"back print in gray",
-      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
-      price:"26.52",
-      strick:"",
-      dis:"-14%"
+      productLink: "https://www.asos.com/adidas-performance/adidas-sportwear-lounge-x-street-t-shirt-in-white/prd/203407123?colourWayId=203407137&cid=16691",
+      ProductName: "adidas Sportwear Lounge x Street t-shirt in white",
+      price: 35,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/adidas-sportwear-lounge-x-street-t-shirt-in-white/203407123-1-white?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 30,
+      productDeal: "-14%",
+      productBadge: ""
     },
     {
-      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
-      name:"back print in gray",
-      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
-      price:"26.53",
-      strick:"49.00",
-      dis:"-14%"
+      productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-black-with-photographic-butterfly-back-print/prd/203670018?colourWayId=203670019&cid=16691",
+      ProductName: "ASOS DESIGN oversized t-shirt in black with photographic butterfly back print",
+      price: 24,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-photographic-butterfly-back-print/203670018-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
     },
     {
-      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
-      name:"back print in gray",
-      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
-      price:"26.54",
-      strick:"",
-      dis:"-14%"
+      productLink: "https://www.asos.com/new-look/new-look-denim-jacket-with-borg-lining-in-black/prd/204087595?colourWayId=204087597&cid=16691",
+      ProductName: "New Look denim jacket with borg lining in black",
+      price: 45,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/new-look-denim-jacket-with-borg-lining-in-black/204087595-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 38,
+      productDeal: "-14%",
+      productBadge: ""
     },
     {
-      image:"https://images.asos-media.com/products/jack-jones-originals-oversized-t-shirt-with-butterfly-back-print-in-gray/203817753-2?$n_320w$&wid=317&fit=constrain",
-      name:"back print in gray",
-      brif:"Jack & Jones Originals oversized t-shirt with butterfly",
-      price:"26.55",
-      strick:"49.00",
-      dis:"-14%"
+      productLink: "https://www.asos.com/asos-design/asos-design-5-pack-muscle-fit-t-shirt-with-crew-neck-save-multi/prd/203370423?colourWayId=203370431&cid=16691",
+      ProductName: "ASOS DESIGN 5 pack muscle fit t-shirt with crew neck save - MULTI",
+      price: 34,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-5-pack-muscle-fit-t-shirt-with-crew-neck-save-multi/203370423-1-multi?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 29,
+      productDeal: "-14%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-off-white-with-celestial-front-and-spine-print/prd/203356290?colourWayId=203356293&cid=16691",
+      ProductName: "ASOS DESIGN oversized t-shirt in off white with celestial front and spine print",
+      price: 21,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-off-white-with-celestial-front-and-spine-print/203356290-1-marshmallow?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/the-north-face/the-north-face-glacier-100-1-4-zip-fleece-in-black/prd/203213274?colourWayId=203213275&cid=16691",
+      ProductName: "The North Face Glacier 100 1/4 zip fleece in black",
+      price: 53,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/the-north-face-glacier-100-1-4-zip-fleece-in-black/203213274-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/new-look/new-look-twill-bomber-jacket-in-black/prd/204266795?colourWayId=204266802&cid=16691",
+      ProductName: "New Look twill bomber jacket in black",
+      price: 30,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/new-look-twill-bomber-jacket-in-black/204266795-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-straight-leg-joggers-with-pintucks-in-off-white/prd/204277573?colourWayId=204277592&cid=16691",
+      ProductName: "ASOS DESIGN straight leg joggers with pintucks in off white",
+      price: 30,
+      sellingFastBadge: "",
+      productImage: "https://images.asos-media.com/products/asos-design-straight-leg-joggers-with-pintucks-in-off-white/204277573-1-jetstream?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/vans/vans-small-logo-t-shirt-in-black/prd/23731570?colourWayId=60507852&cid=16691",
+      ProductName: "Vans Small Logo t-shirt in black",
+      price: 19,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/vans-small-logo-t-shirt-in-black/23731570-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 16,
+      productDeal: "-13%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-90s-oversized-cord-shirt-in-mustard-in-cotton-blend/prd/203917416?colourWayId=203917442&cid=16691",
+      ProductName: "ASOS DESIGN 90s oversized cord shirt in mustard in cotton blend",
+      price: 30,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-90s-oversized-cord-shirt-in-mustard-in-cotton-blend/203917416-1-mustard?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: "MORE COLOURS"
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-black-with-line-drawing-back-print/prd/203353253?colourWayId=203353270&cid=16691",
+      ProductName: "ASOS DESIGN oversized t-shirt in black with line drawing back print",
+      price: 17,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-line-drawing-back-print/203353253-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 14,
+      productDeal: "-14%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/adidas-performance/adidas-football-squadra-21-t-shirt-in-navy/prd/202733385?colourWayId=202733387&cid=16691",
+      ProductName: "adidas Football Squadra 21 t-shirt in navy",
+      price: 20,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/adidas-football-squadra-21-t-shirt-in-navy/202733385-1-navy?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 17,
+      productDeal: "-15%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/the-north-face/the-north-face-himalayan-down-puffer-jacket-in-black-and-off-white/prd/203210404?colourWayId=203210428&cid=16691",
+      ProductName: "The North Face Himalayan down puffer jacket in black and off white",
+      price: 36,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/the-north-face-himalayan-down-puffer-jacket-in-black-and-off-white/203210404-1-blackandoffwhite?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 31,
+      productDeal: "-14%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/new-look/new-look-double-breasted-shower-resistant-trench-coat-in-stone/prd/204266804?colourWayId=204266810&cid=16691",
+      ProductName: "New Look double breasted shower resistant trench coat in stone",
+      price: 65,
+      sellingFastBadge: "",
+      productImage: "https://images.asos-media.com/products/new-look-double-breasted-shower-resistant-trench-coat-in-stone/204266804-1-stone?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 55,
+      productDeal: "-14%",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/collusion/collusion-t-shirt-with-varsity-embroidery-in-red/prd/203590774?colourWayId=203590776&cid=16691",
+      ProductName: "COLLUSION t-shirt with varsity embroidery in red",
+      price: 10,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/collusion-t-shirt-with-varsity-embroidery-in-red/203590774-1-red?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-90s-oversized-linen-shirt-in-ecru/prd/203387022?colourWayId=203387023&cid=16691",
+      ProductName: "ASOS DESIGN 90s oversized linen shirt in ecru",
+      price: 32,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-90s-oversized-linen-shirt-in-ecru/203387022-1-ecru?$n_480w$&wid=476&fit=constrain",
+      saleAmount: 27,
+      productDeal: "-14%",
+      productBadge: "MORE COLOURS"
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-beige/prd/203609046?colourWayId=203609056&cid=16691",
+      ProductName: "ASOS DESIGN oversized t-shirt in beige",
+      price: 10,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-beige/203609046-1-rugbytan?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: "MORE COLOURS"
+    },
+    {
+    productLink: "https://www.asos.com/asos-design/asos-design-t-shirt-with-crew-neck-in-white/prd/203772649?colourWayId=203772650&cid=16691",
+    ProductName: "ASOS DESIGN t-shirt with crew neck in white",
+    price: 8,
+    sellingFastBadge: "",
+    productImage: "https://images.asos-media.com/products/asos-design-t-shirt-with-crew-neck-in-white/203772649-1-white?$n_480w$&wid=476&fit=constrain",
+    saleAmount: "",
+    productDeal: "",
+    productBadge: "MORE COLOURS"
+    },
+    {
+      productLink: "https://www.asos.com/adidas-performance/adidas-sportswear-3-pack-ankle-socks-in-black/prd/203407160?colourWayId=203407178&cid=16691",
+      ProductName: "adidas Sportswear 3 pack ankle socks in black",
+      price: 10,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/adidas-sportswear-3-pack-ankle-socks-in-black/203407160-1-black?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-shirt-in-aztec-stripe-print/prd/203648124?colourWayId=203648141&cid=16691",
+      ProductName: "ASOS DESIGN shirt in aztec stripe print",
+      price: 27,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-shirt-in-aztec-stripe-print/203648124-1-multi?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
+    },
+    {
+      productLink: "https://www.asos.com/asos-design/asos-design-2-pack-slim-linen-shorts-in-khaki-and-beige/prd/203382493?colourWayId=203382495&cid=16691",
+      ProductName: "ASOS DESIGN 2 pack slim linen shorts in khaki and beige",
+      price: 48,
+      sellingFastBadge: "Selling fast",
+      productImage: "https://images.asos-media.com/products/asos-design-2-pack-slim-linen-shorts-in-khaki-and-beige/203382493-1-seaturtroastedcash?$n_480w$&wid=476&fit=constrain",
+      saleAmount: "",
+      productDeal: "",
+      productBadge: ""
     }
   ]
+  
   return (
-    <Box className='Container' backgroundColor="white" >
+    <Box className='Container' backgroundColor="white">
       <Box className="headBox" h="80px" >
         <Heading fontSize="25px" >Bestsellers clothing</Heading>
       </Box>
@@ -238,13 +419,16 @@ const MensProducts = () => {
             </AccordionPanel>
           </AccordionItem>
       </Accordion>
-      <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="10px" p={{base:"10px", md:"20px"}} >
-        {arr.map((el)=>(
+      <Box textAlign="center" fontSize={{base:"10px",md:"12px"}} p={{base:"10px", md:"20px"}} >
+        <Text>{data.length} styles found</Text>
+      </Box>
+      <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="10px" >
+        {data.map((el)=>(
           <Box key={el.price} pb="10px">
             <Box position="relative" >
-              <Image src={el.image} alt='Products' w="100%" />
+              <Image src={el.productImage} alt='Products' w="100%" />
               <Box backgroundColor="white" fontSize={{base:"10px", sm:"11px", md:"12px"}} p="3px 8px" color="red" position="absolute" top="20px"  >
-                  <Text>{el.dis}</Text>
+                  <Text>{el.productDeal}</Text>
               </Box>
               <Box className='tag' right="0%" bottom={{base:"20%", md:"15%"}} fontSize={{base:"9px", sm:"11px", md:"13px",lg:"14px"}} >
                   <Text>SELLING FAST</Text>
@@ -253,11 +437,11 @@ const MensProducts = () => {
                 <FaRegHeart />
               </Box>
             </Box>
-            <Text className='productName' fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.brif}</Text>
+            <Text className='productName' fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.ProductName}</Text>
             <Text className='productName' fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.name}</Text>
             <Flex>
-              <Text p="0px 15px 0px 5px" textDecoration="line-through" fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(255, 0, 85)" >{el.strick!=""?"$"+el.strick:null}</Text>
-              <Text fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(100, 100, 100)" className='mainPrice'>${el.price}</Text>
+              <Text fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(100, 100, 100)" className='mainPrice'>${el.saleAmount?el.saleAmount:el.price}.00</Text>
+              <Text p="0px 15px 0px 5px" textDecoration="line-through" fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(255, 0, 85)" >{el.saleAmount?"$"+el.price+".00":null}</Text>
             </Flex>
           </Box>
         ))}
