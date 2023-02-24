@@ -1,13 +1,13 @@
 
 import Bag from "./Pages/Bag"
-import HomePage from "./Pages/HomePage";
+import Men from "./Pages/LandingPage/Men";
 
 function App() {
   return (
     <div >
-<h1 className="text-red-700">Hello asos team !!!</h1>
+<Men/>
 <Bag/>
-<HomePage/>
+
     </div>
   );
 }
