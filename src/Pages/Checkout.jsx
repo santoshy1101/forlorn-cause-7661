@@ -23,7 +23,7 @@ const Checkout = () => {
   
   return (
     <div>
-    <Text>CHECKOUT</Text>
+     <Text align={"center"} fontWeight={700} fontSize={{base:28, md:32, lg:32}} mb={5} >CHECKOUT </Text>
     <SimpleGrid columns={{base:1,md:2}} spacing={10} w='80%' m="auto">
       <Box  boxShadow='md' p='6' rounded='md' >
       

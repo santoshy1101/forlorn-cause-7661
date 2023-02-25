@@ -7,7 +7,7 @@ const BagTotal = ({t}) => {
     <Box>
       <Text fontSize="xl">Total:<Text as={"span"} fontWeight={700}  >₹ {t}</Text></Text>
       <hr />
-  <Link to="/checkout">
+  <Link to="/products/cart/checkout">
   <Button w="80%" color="white" bg="green">
         CHECKOUT
       </Button>
