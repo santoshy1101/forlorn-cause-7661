@@ -62,7 +62,7 @@ const CheckoutComponent = () => {
               ₹ {Total}
             </Text>
           </Text>
-          <Link to="/checkout">
+       
             <Button
               fontSize={{ base: 16, md: 20, lg: 20 }}
               backgroundColor={"black"}
@@ -79,9 +79,9 @@ const CheckoutComponent = () => {
               width={{ base: "95%", md: "50%", lg: "50%" }}
               onClick={onOpen}
             >
-              PROCEED TO CHECKOUT
+              PLACE ORDER
             </Button>
-          </Link>
+      
         </Box>
       </Box>
 
@@ -114,7 +114,7 @@ const CheckoutComponent = () => {
               <Button colorScheme="blue" mr={3} onClick={onClose}>
                 Close
               </Button>
-              <Link to={`/`}>
+              <Link to={`/men`}>
                 <Button variant="outline" color={"black"}>
                   Continue Shopping
                 </Button>
