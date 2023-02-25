@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Skeleton, SkeletonText } from '@chakra-ui/react'
 import React from 'react'
 
-const Loading = () => {
+const ProductsLoading = () => {
   let arr=[1,2,3,4,5,6,7,8,9,10,11,12]
   return (
     <Box>
@@ -20,4 +20,4 @@ const Loading = () => {
   )
 }
 
-export default Loading
+export default ProductsLoading

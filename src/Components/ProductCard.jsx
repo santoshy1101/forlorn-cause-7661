@@ -7,7 +7,7 @@ import "../Styles/Mens.css"
 const ProductCard = ({el}) => {
     const navigate = useNavigate();
   return (
-    <Box onClick={()=>navigate(`/SingleProduct/${el._id}`)} key={el._id} pb="10px">
+    <Box onClick={()=>navigate(`/singleproduct/${el._id}`)} key={el._id} pb="10px">
         <Box position="relative" >
             <Image src={el.image} alt='Products' w="100%" />
             <Box backgroundColor="white" fontSize={{base:"10px", sm:"11px", md:"12px"}} p="3px 8px" color="red" position="absolute" top="20px"  >
