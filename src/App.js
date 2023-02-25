@@ -13,9 +13,6 @@ function App() {
     <div >
 
 <h1 className="text-red-700">Hello asos team !!!</h1>
-
- <Men/>
-
     </div>
   );
 }
