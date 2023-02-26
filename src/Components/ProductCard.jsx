@@ -4,7 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import "../Styles/Mens.css"
 
-const ProductCard = ({postToBagMen,menOrwomen,el}) => {
+const ProductCard = ({menOrwomen,el}) => {
     const navigate = useNavigate();
   return (
     <Box onClick={()=>navigate(`/singleproduct/${menOrwomen}${el._id}`)} key={el._id} pb="10px">
