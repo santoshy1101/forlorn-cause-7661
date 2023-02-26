@@ -15,11 +15,9 @@
     border-radius: 0px;
     width: 80%;
 }
-.heart{
-    vertical-align: baseline;
+.heartSymbol{
     background: rgb(226, 226, 226);
     color: rgb(255, 0, 34);
     border-radius: 100%;
     width: 40px;
-    font-weight: 700;
 }
