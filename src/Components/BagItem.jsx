@@ -8,7 +8,7 @@ export function BagItems(el) {
  
   const dispatch = useDispatch();
 
-  function deleteHandler() {
+  function deleteHandler(_id) {
    
     dispatch(deleteBagData(_id)).then(() => dispatch(getBagData())).then(()=>window.location.reload());
     
