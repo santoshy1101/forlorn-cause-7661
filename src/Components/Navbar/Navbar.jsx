@@ -29,9 +29,12 @@ const Navbar = () => {
       
       </ul>
       </div>
-      <div className='flex items-center justify-center m-auto my-5 md:hidden '>
+      <div className='block md:hidden'>
+      <div className='flex items-center justify-center m-auto my-5 '>
       <div className='flex items-center justify-between px-2 text-black bg-white rounded-full outline-none ring-2 sm:w-[400px] w-[90%]'><input type="text" placeholder='Search for items and brands' className='  sm:w-[100%] h-[35px] outline-none  rounded-full'/> <FiSearch size={20} /></div>
       </div>
+      </div>
+    
     </div>
   )
 }
