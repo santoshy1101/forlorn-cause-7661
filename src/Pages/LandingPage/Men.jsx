@@ -84,8 +84,8 @@ const Men = () => {
         {mens_top_cat.map(({ src, id, title, desc }) => {
           return (
             <div key={id} className="w-[250px] sm:w-[100%]">
-              <div className="w-[100%] ring-2">
-                <img className="w-[100%] h-[100%]" src={src} alt={title} />
+              <div className="w-[100%]  overflow-hidden group">
+                <img className="w-[100%] h-[100%]  group-hover:scale-110 hover:ease-in transition duration-200 object-cover ease-in rounded-lg hover:opacity-80" src={src} alt={title} />
               </div>
               <div className="my-3 leading-8">
                 <p className="font-bold">{title}</p>
@@ -120,8 +120,8 @@ const Men = () => {
         {mens_style_cat.map(({ src, title, desc, id }) => {
           return (
             <div key={id} className=" w-[300px] lg:w-[500px] md:w-[300px] sm:w-[250px]">
-              <div className="lg:w-[100%]">
-                <img className="w-[100%] h-[100%]" src={src} alt={title} />
+              <div className="lg:w-[100%] overflow-hidden group">
+                <img className="w-[100%] h-[100%] group-hover:scale-110 hover:ease-in transition duration-200 object-cover ease-in rounded-lg hover:opacity-80" src={src} alt={title} />
               </div>
 
               <div className="my-3 leading-10">
