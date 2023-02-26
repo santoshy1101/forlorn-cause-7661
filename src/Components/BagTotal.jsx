@@ -1,17 +1,18 @@
 import React from "react";
 import { Text, Button, Image, Box } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
-const BagTotal = () => {
+const BagTotal = ({t}) => {
   return (
     <Box>
-      <Text fontSize="xl">Total</Text>
+      <Text fontSize="xl">Total:<Text as={"span"} fontWeight={700}  >₹ {t}</Text></Text>
       <hr />
-      <Text fontSize="md" justifyContent={"space-between"}>
-        Sub-total Delivery <span>100</span>
-      </Text>
-      <Button w="80%" color="white" bg="green">
+  <Link to="/products/cart/checkout">
+  <Button w="80%" color="white" bg="green">
         CHECKOUT
       </Button>
+  </Link>
+     
       <Text fontSize="md">WE ACCEPT</Text>
       <Image
         boxSize="30%"

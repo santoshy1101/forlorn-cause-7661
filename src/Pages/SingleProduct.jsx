@@ -1,74 +1,19 @@
 import { Box, Button, Flex, Image, Select, SimpleGrid, Text } from '@chakra-ui/react'
 import { IoPricetagOutline } from "react-icons/io5";
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Styles/SingleProduct.css"
 import { FaHeart, FaTruckMoving } from 'react-icons/fa';
 import { MdOutlineAssignmentReturn } from 'react-icons/md';
+import { useParams } from 'react-router-dom';
 
+//63f868ca4d1c716feb485c36
 const SingleProduct = () => {
-    let data=[
-        {
-          productLink: "https://www.asos.com/adidas-performance/adidas-sportwear-lounge-x-street-t-shirt-in-white/prd/203407123?colourWayId=203407137&cid=16691",
-          ProductName: "adidas Sportwear Lounge x Street t-shirt in white",
-          price: 35,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/adidas-sportwear-lounge-x-street-t-shirt-in-white/203407123-1-white?$n_480w$&wid=476&fit=constrain",
-          saleAmount: 30,
-          productDeal: "-14%",
-          productBadge: ""
-        },
-        {
-          productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-black-with-photographic-butterfly-back-print/prd/203670018?colourWayId=203670019&cid=16691",
-          ProductName: "ASOS DESIGN oversized t-shirt in black with photographic butterfly back print",
-          price: 24,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-photographic-butterfly-back-print/203670018-1-black?$n_480w$&wid=476&fit=constrain",
-          saleAmount: "",
-          productDeal: "",
-          productBadge: ""
-        },
-        {
-          productLink: "https://www.asos.com/new-look/new-look-denim-jacket-with-borg-lining-in-black/prd/204087595?colourWayId=204087597&cid=16691",
-          ProductName: "New Look denim jacket with borg lining in black",
-          price: 45,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/new-look-denim-jacket-with-borg-lining-in-black/204087595-1-black?$n_480w$&wid=476&fit=constrain",
-          saleAmount: 38,
-          productDeal: "-14%",
-          productBadge: ""
-        },
-        {
-          productLink: "https://www.asos.com/asos-design/asos-design-5-pack-muscle-fit-t-shirt-with-crew-neck-save-multi/prd/203370423?colourWayId=203370431&cid=16691",
-          ProductName: "ASOS DESIGN 5 pack muscle fit t-shirt with crew neck save - MULTI",
-          price: 34,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/asos-design-5-pack-muscle-fit-t-shirt-with-crew-neck-save-multi/203370423-1-multi?$n_480w$&wid=476&fit=constrain",
-          saleAmount: 29,
-          productDeal: "-14%",
-          productBadge: ""
-        },
-        {
-          productLink: "https://www.asos.com/asos-design/asos-design-oversized-t-shirt-in-off-white-with-celestial-front-and-spine-print/prd/203356290?colourWayId=203356293&cid=16691",
-          ProductName: "ASOS DESIGN oversized t-shirt in off white with celestial front and spine print",
-          price: 21,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-off-white-with-celestial-front-and-spine-print/203356290-1-marshmallow?$n_480w$&wid=476&fit=constrain",
-          saleAmount: "",
-          productDeal: "",
-          productBadge: ""
-        },
-        {
-          productLink: "https://www.asos.com/the-north-face/the-north-face-glacier-100-1-4-zip-fleece-in-black/prd/203213274?colourWayId=203213275&cid=16691",
-          ProductName: "The North Face Glacier 100 1/4 zip fleece in black",
-          price: 53,
-          sellingFastBadge: "Selling fast",
-          productImage: "https://images.asos-media.com/products/the-north-face-glacier-100-1-4-zip-fleece-in-black/203213274-1-black?$n_480w$&wid=476&fit=constrain",
-          saleAmount: "",
-          productDeal: "",
-          productBadge: ""
-        }
-      ]
-    
+    let data = SingleMenBottomdata
+    const {id} = useParams()
+    console.log('idsingle:', id)
+    useEffect(()=>{
+
+    },[])
   return (
     <Box width={{base:"95%",md:"90",lg:"85%"}} margin="auto" marginTop="20px" marginBottom="20px" >
         <Flex flexDirection={{base:"column", sm:"row"}} width={{md:"100%", lg:"80%"}} margin="auto" >
@@ -80,7 +25,7 @@ const SingleProduct = () => {
             </Box>
             <Box width={{base:"100%",sm:"50%", md:"40%"}} padding="20px"  lineHeight={{base:"20px",md:"25px"}} >
                 <Text className='productName' fontSize={{base:"12px", sm:"14px", md:"16px"}} >COLLUSION Unisex knitted jumper with knibble detail in charcoal</Text>
-                <Text className='mainPrice' fontSize={{base:"11px", sm:"13px", md:"15px"}} >$99.00</Text>
+                <Text className='mainPrice' fontSize={{base:"11px", sm:"13px", md:"15px"}} >₹99.00</Text>
                 <Box backgroundColor="lightblue" p="5px 15px" margin="auto" marginTop="20px" >
                     <Flex fontSize={{base:"20px", md:"25px"}} >
                         <IoPricetagOutline />
@@ -118,9 +63,9 @@ const SingleProduct = () => {
         {/* ----------------------------------------------------------------------------------------- */}
         <SimpleGrid margin="50px 0px" columns={{base:2,sm:3,md:4,lg:6}} spacing="10px" >
             {data.map((el)=>(
-                <Box key={el.price} pb="10px">
+                <Box key={el.price+el.strike} p="20px 0px">
                     <Box position="relative" >
-                        <Image src={el.productImage} alt='Products' w="100%" />
+                        <Image src={el.image} alt='Products' w="100%" />
                         <Box backgroundColor="white" fontSize={{base:"10px", sm:"11px", md:"12px"}} p="3px 8px" color="red" position="absolute" top="20px"  >
                         <Text>{el.productDeal}</Text>
                     </Box>
@@ -128,8 +73,8 @@ const SingleProduct = () => {
                     <Text fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.ProductName}</Text>
                     <Text fontSize={{base:"10px", sm:"11px", md:"12px"}} lineHeight={{base:"17px",md:"22px"}} >{el.name}</Text>
                     <Flex>
-                        <Text fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(100, 100, 100)" className='mainPrice'>${el.saleAmount?el.saleAmount:el.price}.00</Text>
-                        <Text p="0px 15px 0px 5px" textDecoration="line-through" fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(255, 0, 85)" >{el.saleAmount?"$"+el.price+".00":null}</Text>
+                        <Text fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(100, 100, 100)" className='mainPrice'>₹{el.price?el.price:el.strike}.00</Text>
+                        <Text p="5px 15px 0px 5px" textDecoration="line-through" fontSize={{base:"12px", sm:"13px", md:"14px"}} color="rgb(255, 0, 85)" >{el.price?"$"+el.strike+".00":null}</Text>
                     </Flex>
                 </Box>
             ))}
@@ -139,3 +84,48 @@ const SingleProduct = () => {
 }
 
 export default SingleProduct
+
+export const SingleMenBottomdata=[
+    {
+      ProductName: "adidas Sportwear Lounge x Street t-shirt in white",
+      strike: 1500,
+      image: "https://images.asos-media.com/products/adidas-sportwear-lounge-x-street-t-shirt-in-white/203407123-1-white?$n_480w$&wid=476&fit=constrain",
+      price: 1100,
+      productDeal: "-14%",
+    },
+    {
+      ProductName: "ASOS DESIGN oversized t-shirt in butterfly back print",
+      strike: 1130,
+      image: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-photographic-butterfly-back-print/203670018-1-black?$n_480w$&wid=476&fit=constrain",
+      price: "",
+      productDeal: "",
+    },
+    {
+      ProductName: "New Look denim jacket with borg lining in black",
+      strike: 820,
+      image: "https://images.asos-media.com/products/new-look-denim-jacket-with-borg-lining-in-black/204087595-1-black?$n_480w$&wid=476&fit=constrain",
+      price: 760,
+      productDeal: "-14%",
+    },
+    {
+      ProductName: "ASOS DESIGN 5 pack muscle fit t-shirt with crew neck save - MULTI",
+      strike: 930,
+      image: "https://images.asos-media.com/products/asos-design-5-pack-muscle-fit-t-shirt-with-crew-neck-save-multi/203370423-1-multi?$n_480w$&wid=476&fit=constrain",
+      price: 2500,
+      productDeal: "-14%",
+    },
+    {
+      ProductName: "ASOS DESIGN oversized t-shirt white with celestial print",
+      strike: 1180,
+      image: "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-off-white-with-celestial-front-and-spine-print/203356290-1-marshmallow?$n_480w$&wid=476&fit=constrain",
+      price: "",
+      productDeal: "",
+    },
+    {
+      ProductName: "The North Face Glacier 100 1/4 zip fleece in black",
+      strike: 830,
+      image: "https://images.asos-media.com/products/the-north-face-glacier-100-1-4-zip-fleece-in-black/203213274-1-black?$n_480w$&wid=476&fit=constrain",
+      price: "",
+      productDeal: "",
+    }
+  ]
