@@ -20,7 +20,12 @@ const Navbar = () => {
       <Link to="/men" ><li>MEN</li></Link>
       </ul>
     
-      <li className='hidden md:block'><div className='flex  items-center outline-none  justify-between text-black lg:w-[500px]  md:w-[350px] h-[35px] bg-white  px-2 rounded-full'><input type="text" placeholder='Search for items and brands' className='w-[100%] h-[35px] outline-none  rounded-full'/> <FiSearch size={20} /></div></li>
+      <li className='hidden md:block'>
+        <div className='flex  items-center outline-none  justify-between text-black lg:w-[500px]  md:w-[350px] h-[35px] bg-white  px-2 rounded-full'>
+          <input type="text" placeholder='Search for items and brands' className='w-[100%] h-[35px] outline-none  rounded-full'/> 
+          <FiSearch size={20} />
+        </div>
+      </li>
       <ul className='flex items-center justify-between gap-x-9'>
       <li><FaUserAlt size={20}/></li>
       <li><FiHeart size={20}/></li>
@@ -28,9 +33,6 @@ const Navbar = () => {
       </ul>
       
       </ul>
-      </div>
-      <div className='flex items-center justify-center m-auto my-5 md:hidden '>
-      <div className='flex items-center justify-between px-2 text-black bg-white rounded-full outline-none ring-2 sm:w-[400px] w-[90%]'><input type="text" placeholder='Search for items and brands' className='  sm:w-[100%] h-[35px] outline-none  rounded-full'/> <FiSearch size={20} /></div>
       </div>
     </div>
   )
