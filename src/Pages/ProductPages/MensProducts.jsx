@@ -325,7 +325,7 @@ const MensProducts = () => {
 {/* ---------------------- Men Products ---------------------------------------------------------- */}
       <SimpleGrid
         columns={{ base: 2, sm: 3, lg: 4 }}
-        spacing="10px"
+        spacing="20px"
         p={{ base: "10px", md: "0px 20px", lg: "0px 40px" }}
       >
         {data && data.map((el) => <ProductCard key={el._id} menOrwomen="m" el={el} />)}

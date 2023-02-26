@@ -8,7 +8,7 @@ const ProductsLoading = () => {
     <Skeleton isLoaded={false} w="100%" height="70px" ></Skeleton>
     <Box height="10px" ></Box>
     <Skeleton isLoaded={false} w="100%" height="80px" ></Skeleton>
-    <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="10px"  p={{base:"10px", md:"15px 20px",lg:"30px 40px"}} >
+    <SimpleGrid columns={{base:2,sm:3,lg:4}} spacing="20px"  p={{base:"10px", md:"15px 20px",lg:"30px 40px"}} >
     {arr.map((el)=>(
       <Box key={el} pb="10px">
         <Skeleton isLoaded={false} w="100%" height="380px" ></Skeleton>
