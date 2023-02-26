@@ -6,6 +6,7 @@ import Women from "../Pages/LandingPage/Women";
 import SingleProduct from "../Pages/SingleProduct";
 import MensProducts from "../Pages/ProductPages/MensProducts";
 import WomensProducts from "../Pages/ProductPages/WomensProducts";
+import FullPage from "../Pages/AdminPage/FullPage";
 
 const AllRoutes = () => {
   return (
@@ -18,7 +19,7 @@ const AllRoutes = () => {
       <Route path="/products/cart/checkout" element={<Checkout />} />
       {/* :ID gives you changed value */}
       <Route path="/singleproduct/:id" element={<SingleProduct />} />
-
+    <Route path="/admin" element={<FullPage/>}></Route>
       {/* When get wrong link/params */}
       {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
