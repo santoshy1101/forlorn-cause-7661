@@ -10,13 +10,14 @@ export function BagItems(el) {
 
   function deleteHandler() {
    
-    dispatch(deleteBagData(_id)).then(() => dispatch(getBagData()));
+    dispatch(deleteBagData(_id)).then(() => dispatch(getBagData())).then(()=>window.location.reload());
+    
   }
 
   
 
   return (
-    <Box boxShadow='md' p='6'  bg='white' rounded='md'>
+    <Box >
       <Flex
         key={el._id}
         width={{ base: "100%", md: "95%", lg: "90%" }}
@@ -32,7 +33,7 @@ export function BagItems(el) {
         <Box pr='3'  >
           <Image
             src={el.image}
-            width={{ base: "100px", md: "120px", lg: "120px" }}
+             width={{ base: "100px", md: "120px", lg: "120px" }}
             m={0}
           />
         </Box>
@@ -45,19 +46,20 @@ export function BagItems(el) {
             {el.product}
           </Text>
 
-          <s>
+        
             {" "}
             <Text fontSize={{ base: 16, md: 20, lg: 20 }}>
               ₹ {el.price}
             </Text>
-          </s>
+         
 
-   
+          <s>
           <Text
             display={{ base: "none", md: "block", lg: "block", color: "red" }}
           >
             ₹ {el.strike}
           </Text>
+          </s>
         </Box>
         <Box>
           <CloseButton

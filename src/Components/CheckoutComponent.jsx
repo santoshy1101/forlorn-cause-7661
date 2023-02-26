@@ -28,7 +28,7 @@ const CheckoutComponent = () => {
   }, []);
   let Total = 0;
   {
-    payload?.map((el) => (Total += el.offerPrice));
+    payload?.map((el) => (Total += el.price));
   }
   return (
     <div>

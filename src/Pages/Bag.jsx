@@ -23,7 +23,7 @@ export default function Bag ()
     }
 
     let Total = 0;
-     {payload?.map(el=>Total+=el.strike)}
+     {payload?.map(el=>Total+=el.price)}
 
     return (
         <Box fontSize={{base:12, md:14, lg:16}} letterSpacing={0.9} fontWeight={400} mt={5} mb={5}>
