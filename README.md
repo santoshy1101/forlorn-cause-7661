@@ -124,9 +124,6 @@ Glimpse and Screenshots of our cloned website:
    <img width="30%" src="./src/Assets/SingleProduct.png">
  
 
-<img width="50%" src="">
-<img width="50%" src="">
-<img width="50%" src="">
 
 ## Admin:
 

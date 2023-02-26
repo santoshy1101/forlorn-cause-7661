@@ -6,9 +6,7 @@
     }
     .cxy--123{
         display: flex;
-            margin-left: 420px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        margin: auto;
         width: 400px;
         padding: 30px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
