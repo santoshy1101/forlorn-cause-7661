@@ -316,8 +316,9 @@ const MensProducts = () => {
 
       <Box
         textAlign="center"
-        fontSize={{ base: "10px", md: "12px" }}
+        fontSize={{ base: "11px", md: "13px" }}
         p={{ base: "10px", md: "20px" }}
+        fontStyle="sans-serif"
       >
         <Text>{data.length} styles found</Text>
       </Box>
@@ -325,9 +326,9 @@ const MensProducts = () => {
       <SimpleGrid
         columns={{ base: 2, sm: 3, lg: 4 }}
         spacing="10px"
-        p={{ base: "10px", md: "15px 20px", lg: "30px 40px" }}
+        p={{ base: "10px", md: "0px 20px", lg: "0px 40px" }}
       >
-        {data && data.map((el) => <ProductCard key={el._id} el={el} />)}
+        {data && data.map((el) => <ProductCard key={el._id} menOrwomen="m" el={el} />)}
       </SimpleGrid>
     </Box>
   );
