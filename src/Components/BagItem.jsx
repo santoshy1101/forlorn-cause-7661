@@ -34,8 +34,11 @@ export function BagItems(el) {
         <Box pr='0'  >
           <Image
             src={el.image}
+
              width={ "30%"}
              m={0}
+
+            
           />
         </Box>
 
