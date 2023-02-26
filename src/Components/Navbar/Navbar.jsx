@@ -13,7 +13,7 @@ const Navbar = () => {
    
       <ul className='flex items-center justify-between px-10 text-slate-100 bg-slate-700 '>
       <ul  className='flex items-center justify-around font-bold text-[14px] sm:text-lg gap-x-10'>
-     <Link to="/men"> <li><div className='w-[50px] py-1'>
+     <Link to="/"> <li><div className='w-[100px] py-1'>
      <img className='w-[100%] rounded-2xl ' src={logo} alt="" />
      </div></li></Link>
      <Link to="/women"> <li>WOMEN</li></Link>

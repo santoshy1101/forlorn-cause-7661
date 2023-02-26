@@ -13,6 +13,7 @@ import PrivateRoute from "../Pages/AdminPage/PrivateRoute";
 const AllRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<Men />} />
       <Route path="/men" element={<Men />} />
       <Route path="/women" element={<Women />} />
       <Route path="/products/mens" element={<MensProducts />} />
