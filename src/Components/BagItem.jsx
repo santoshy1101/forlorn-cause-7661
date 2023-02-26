@@ -4,28 +4,21 @@ import { useDispatch } from "react-redux";
 import { deleteBagData, getBagData } from "../Redux/Bag/action";
 
 export function BagItems(el) {
-  const [qnt, setQnt] = useState(1);
-  const { id } = el;
+  const { _id } = el;
+ 
   const dispatch = useDispatch();
 
   function deleteHandler() {
-    dispatch(deleteBagData(id)).then(() => dispatch(getBagData()));
+   
+    dispatch(deleteBagData(_id)).then(() => dispatch(getBagData()));
   }
 
-  function Dec() {
-    if (qnt > 1) {
-      setQnt(qnt - 1);
-    }
-  }
-
-  function Inc() {
-    setQnt(qnt + 1);
-  }
+  
 
   return (
-    <>
+    <Box boxShadow='md' p='6'  bg='white' rounded='md'>
       <Flex
-        key={el.id}
+        key={el._id}
         width={{ base: "100%", md: "95%", lg: "90%" }}
         margin={"auto"}
         justify={"space-around"}
@@ -36,7 +29,7 @@ export function BagItems(el) {
         pb={5}
         pt={5}
       >
-        <Box pr='3'>
+        <Box pr='3'  >
           <Image
             src={el.image}
             width={{ base: "100px", md: "120px", lg: "120px" }}
@@ -49,35 +42,31 @@ export function BagItems(el) {
             fontSize={{ base: 16, md: 20, lg: 20 }}
             width={{ base: "120px", md: "250px", lg: "400px" }}
           >
-            {el.productName}
+            {el.product}
           </Text>
 
           <s>
             {" "}
             <Text fontSize={{ base: 16, md: 20, lg: 20 }}>
-              ₹ {el.actualPrice * qnt}
+              ₹ {el.price}
             </Text>
           </s>
 
-          {/* <Flex display={{ base: 'none', md: 'block', lg: 'block' }}>
-                  <Button border={"1px solid"} onClick={Dec}  ml={1} mr={1}>-</Button>
-                  <Button border={"1px solid"}   ml={1} mr={1}>{qnt}</Button>
-                  <Button border={"1px solid"} onClick={Inc}  ml={1} mr={1}>+</Button>
-              </Flex> */}
+   
           <Text
             display={{ base: "none", md: "block", lg: "block", color: "red" }}
           >
-            ₹ {el.offerPrice * qnt}
+            ₹ {el.strike}
           </Text>
         </Box>
         <Box>
           <CloseButton
             display={{ base: "block", md: "block", lg: "block" }}
             color={"#5b5b5b"}
-            onClick={() => deleteHandler(id)}
+            onClick={() => deleteHandler(_id)}
           />
         </Box>
       </Flex>
-    </>
+    </Box>
   );
 }

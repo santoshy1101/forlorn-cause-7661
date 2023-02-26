@@ -25,7 +25,7 @@ const Checkout = () => {
     <div>
      <Text align={"center"} fontWeight={700} fontSize={{base:28, md:32, lg:32}} mb={5} >CHECKOUT </Text>
     <SimpleGrid columns={{base:1,md:2}} spacing={10} w='80%' m="auto">
-      <Box  boxShadow='md' p='6' rounded='md' >
+      <Box  boxShadow='md'  bg='white' p='6' rounded='md' >
       
       <Box display="flex"  justifyContent="space-between"  boxShadow='md' p='6' rounded='md'  mb='5'>
       <Text as='b'>DELIVERY COUNTRY:</Text>
@@ -36,7 +36,7 @@ const Checkout = () => {
       <Button>CHANGE</Button>
   </Box>
 
-  <Box  boxShadow='md' p='6' rounded='md' mb='5'>
+  <Box  boxShadow='md' p='6'  bg='white' rounded='md' mb='5'>
     <Text  as='b'>EMAIL ADDRESS</Text>
     {
       flag1 ? <Input type="email" placeholder="Enter your email...."  onChange={(e)=>setEmail(e.target.value)}/> : <h1>{email}</h1>
@@ -46,7 +46,7 @@ const Checkout = () => {
     <Button onClick={(e)=>setFlag1(!flag1)}> {flag1? "submit":"Change"}</Button>
   </Box>
 
-  <Box  boxShadow='2xl' p='6' rounded='md' mb='5'>
+  <Box  boxShadow='md' p='6'  bg='white' rounded='md' mb='5'>
   <Text  as='b'>
   DELIVERY ADDRESS
   </Text>
@@ -96,7 +96,7 @@ const Checkout = () => {
    </Box>
    </Box>
 
-   <Box  boxShadow='2xl' p='6' rounded='md'  mb='5'>
+   <Box  boxShadow='md' p='6'  bg='white' rounded='md'  mb='5'>
    <Text  as='b'>  DELIVERY OPTIONS</Text>
   <Box>
    
@@ -116,7 +116,7 @@ const Checkout = () => {
 
   </Box>
 
-  <Box  boxShadow='2xl' p='6' rounded='md'  mb='5'>
+  <Box  boxShadow='md' p='6' rounded='md' bg='white'  mb='5'>
   <Text as='b'>PAYMENT</Text>
 
   <Box>

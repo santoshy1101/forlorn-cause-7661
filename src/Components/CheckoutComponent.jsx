@@ -32,7 +32,7 @@ const CheckoutComponent = () => {
   }
   return (
     <div>
-      <Box>
+      <Box  boxShadow='md' p='6'  bg='white' rounded='md' >
         <Text
           align={"center"}
           fontWeight={700}
