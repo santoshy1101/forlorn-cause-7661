@@ -24,7 +24,7 @@ const Navbar = () => {
       <ul className='flex items-center justify-between gap-x-9'>
       <li><FaUserAlt size={20}/></li>
       <li><FiHeart size={20}/></li>
-      <li><BsBag size={20}/></li>
+      <Link to="/products/cart"><li><BsBag size={20}/></li></Link>
       </ul>
       
       </ul>
