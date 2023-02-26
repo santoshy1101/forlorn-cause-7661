@@ -1,11 +1,14 @@
-import React from 'react'
-import ProductCrud from './ProductCrud'
+import React, { useState } from 'react'
+
+import ProductView from './ProductView'
 
 const FullPage = () => {
+  const [update,setUpdate]=useState(false)
   return (
     <div>
-        <ProductCrud/>
-        <FullPage/>
+   
+      
+        <ProductView update={update} setUpdate={setUpdate}/>
     </div>
   )
 }

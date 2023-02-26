@@ -1,18 +1,23 @@
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import React, { useState } from 'react'
+
+
+
 import {
     FormControl,
     FormLabel,
-    FormErrorMessage,
-    FormHelperText,
+  
     Input,
     Button,
-    useToast
+  
+    useToast,
+    Heading,
+    
   } from '@chakra-ui/react'
 import './addjob.css'
   import { v4 as uuid } from 'uuid'
-import { RiContactsBookLine } from 'react-icons/ri'
-import MAdmin from './MAdmin'
+
+
 const addProduct=(data={})=>{
     return axios.post(`https://long-boa-sun-hat.cyclic.app/men`,{
         
@@ -25,15 +30,46 @@ const addProduct=(data={})=>{
     })
   
 }
+const getCount=()=>(
+    axios.get(`https://long-boa-sun-hat.cyclic.app/men`
+    )
+  )
 
-//  image: String,
-// brand: String,
-// product: String,
-// price: Number,
-// strike: Number,
-// discount: String,
-function ProductCrud() {
-    const unique_id = uuid();
+const getData=()=>(
+    axios.get(`https://long-boa-sun-hat.cyclic.app/men`
+    )
+  )
+const ProductView = ({update,setUpdate}) => {
+    const [data,setData]=useState([])
+
+    const [countM,setMCount]=useState([])
+
+
+    useEffect(()=>{
+     getCount().then((res)=>(
+         setMCount(res.data)
+     ))
+    },[update])
+    
+    useEffect(()=>{
+        getData().then((res)=>(
+            setData(res.data)
+        ))
+    },[update])
+
+    const handleDelete = (id) => {
+        axios.delete(`https://long-boa-sun-hat.cyclic.app/men/${id}`)
+          .then(response => {
+           
+            console.log(response.data)
+            setUpdate(!update)
+            
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      };
+      const unique_id = uuid();
     const [loading,setLoading]=useState(false)
     const [formState,setFormState]=useState({
         image:"",
@@ -65,15 +101,20 @@ function ProductCrud() {
           isClosable: true,
         })
         setLoading(false)
+        setUpdate(!update)
+        
       },1000)
      
       return  addProduct(formState)
     }
-    console.log(formState)
+    
   return (
-    <div className='addb122'>
+    <div>
+         <div className='addb122'>
+         <Heading as={'h1'} textAlign={"center"}>Add Product</Heading>
 <div className="cxy--123">
-<FormControl>
+ 
+<FormControl> 
 
   <FormLabel>Image</FormLabel>
   <Input type='url'name='image' onChange={handleInput} value={formState.image}></Input>
@@ -102,7 +143,35 @@ function ProductCrud() {
 
 
     </div>
+    <Heading as={'h1'} textAlign={'center'}>Products</Heading>
+    Total Results {countM.reduce((a,c)=>a+1,0)}
+    
+        
+        {data.map((item)=>{
+            return <div key={item.id} className="crud__box">
+                <img style={{width:"100px"}} src={item.image} alt={item.product}/>
+                <div className='flex '>
+                    <div>
+                    <p>{item.product}</p>
+                    <p>{item.brand}</p>
+                 
+                    <p>{item.price}</p>
+                    <p>{item.strike}</p>
+                    <p>{item.discount}</p>
+                    </div>
+                    
+                </div>
+                <div className='flexDelete'>
+                <Button colorScheme={"red"} onClick={()=>handleDelete(item._id)}>Remove</Button>
+                </div>
+                
+            </div>
+        })}
+
+
+     
+    </div>
   )
 }
 
-export default ProductCrud
+export default ProductView
