@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const BagTotal = ({t}) => {
   return (
-    <Box>
+    <Box lineHeight={10}  bg='white' boxShadow='md' p='6' rounded='md'>
+      <Text  align={"left"} fontWeight={700} fontSize={{base:28, md:32, lg:32}} mb={5} >TOTAL </Text>
       <Text fontSize="xl">Total:<Text as={"span"} fontWeight={700}  >₹ {t}</Text></Text>
       <hr />
   <Link to="/products/cart/checkout">

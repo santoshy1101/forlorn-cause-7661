@@ -4,10 +4,10 @@ import { FaRegHeart } from "react-icons/fa";
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import "../Styles/Mens.css"
 
-const ProductCard = ({el}) => {
+const ProductCard = ({menOrwomen,el}) => {
     const navigate = useNavigate();
   return (
-    <Box onClick={()=>navigate(`/singleproduct/${el._id}`)} key={el._id} pb="10px">
+    <Box onClick={()=>navigate(`/singleproduct/${menOrwomen}${el._id}`)} key={el._id} cursor="pointer" pb="10px">
         <Box position="relative" >
             <Image src={el.image} alt='Products' w="100%" />
             <Box backgroundColor="white" fontSize={{base:"10px", sm:"11px", md:"12px"}} p="3px 8px" color="red" position="absolute" top="20px"  >

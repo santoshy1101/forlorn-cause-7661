@@ -3,9 +3,9 @@
  
 
 ##  Contributors 
- Santosh Yadav.
- 
  swarup kadoli.
+ 
+ Santosh Yadav.
  
  Abhishek Chatterjee.
  
@@ -14,10 +14,8 @@
  Mohammad Sahil.
  
 ##  Steps to follow
-git clone 
-
-npm i
-
+- `git clone` 
+- `npm i`
 
 
 # Project Project Name 
@@ -31,6 +29,12 @@ Hello everyone, this is a Readme for our construct week project that has been co
 
 ### Deployed Links:
 - https://
+
+### Backend Links:
+- Deployment :
+- https://long-boa-sun-hat.cyclic.app
+- Repository :
+- https://github.com/swarup-1/asos-backend
  
  
 
@@ -41,9 +45,12 @@ can be used to discover the latest fashion trends with ASOS. Shop the new collec
 
 
 - Original LOGO :
-   <img width="50%" src="">     
+
+   <img width="30%" src="./src/Assets/OriginalLogo.PNG"> 
+
 - Our LOGO :
-   <img width="50%" src="">
+
+   <img width="30%" src="./src/Assets/Wearly_dark.png">
 <br />
 
 
@@ -101,15 +108,22 @@ Glimpse and Screenshots of our cloned website:
 ## Product Page:
 
 
-<img width="50%" src="">
+- Mens Page :
 
-## Pdoduct Detailes Page:
+   <img width="30%" src="./src/Assets/menPage.png">
 
+- Womens Page :
+
+   <img width="30%" src="./src/Assets/womenPage.png">
+<br />
+
+## Product Detailes Page:
+
+   <img width="30%" src="./src/Assets/SingleProduct2.png">
+
+   <img width="30%" src="./src/Assets/SingleProduct.png">
  
 
-<img width="50%" src="">
-<img width="50%" src="">
-<img width="50%" src="">
 
 ## Admin:
 
