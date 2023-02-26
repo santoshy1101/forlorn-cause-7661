@@ -13,7 +13,7 @@ const Navbar = () => {
    
       <ul className='flex items-center justify-between px-10 text-slate-100 bg-slate-700 '>
       <ul  className='flex items-center justify-around font-bold text-[14px] sm:text-lg gap-x-10'>
-     <Link to="/men"> <li><div className='w-[50px] py-1'>
+     <Link to="/men"> <li><div className='w-[100px] py-1'>
      <img className='w-[100%] rounded-2xl ' src={logo} alt="" />
      </div></li></Link>
      <Link to="/women"> <li>WOMEN</li></Link>
@@ -34,15 +34,12 @@ const Navbar = () => {
       
       </ul>
       </div>
-<<<<<<< HEAD
-=======
       <div className='block md:hidden'>
       <div className='flex items-center justify-center m-auto my-5 '>
       <div className='flex items-center justify-between px-2 text-black bg-white rounded-full outline-none ring-2 sm:w-[400px] w-[90%]'><input type="text" placeholder='Search for items and brands' className='  sm:w-[100%] h-[35px] outline-none  rounded-full'/> <FiSearch size={20} /></div>
       </div>
       </div>
-    
->>>>>>> 5c81d88355b7e73939b91f8e96adcb11df95b3d1
+
     </div>
   )
 }
