@@ -5,13 +5,17 @@ import SingleProduct from "./Pages/SingleProduct";
 import Checkout from "./Pages/Checkout";
 import CheckoutComponent from "./Components/CheckoutComponent";
 import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/Navbar"
+import AllRoutes from "./Components/AllRoutes";
+
 
 function App() {
   return (
-    <div >
+    <div className="body">
+<Navbar/>
+<AllRoutes/>
 
-
-<Men/>
+{/* <Men/> */}
 {/* <SingleProduct /> */}
 {/* <Bag/> */}
 {/* <Checkout/> */}

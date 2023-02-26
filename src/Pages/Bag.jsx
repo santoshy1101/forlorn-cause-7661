@@ -10,7 +10,7 @@ export default function Bag ()
 {
     const bagData = useSelector(store=>store.bagReducer)
     const {payload, isLoading} = bagData;
-
+   
     const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(getBagData())
@@ -23,7 +23,7 @@ export default function Bag ()
     }
 
     let Total = 0;
-     {payload?.map(el=>Total+=el.offerPrice)}
+     {payload?.map(el=>Total+=el.strike)}
 
     return (
         <Box fontSize={{base:12, md:14, lg:16}} letterSpacing={0.9} fontWeight={400} mt={5} mb={5}>
@@ -60,7 +60,7 @@ export default function Bag ()
                
                 </SimpleGrid>
            
-            <Flex align={"center"} pt={3} pb={3} backgroundColor={"#eeeeee"} display={{ base: 'block', md: 'flex', lg: 'flex' }} justify={"space-evenly"} >
+            <Flex align={"center"} pt={3} pb={3} backgroundColor={"gray.200"} display={{ base: 'block', md: 'flex', lg: 'flex' }} justify={"space-evenly"} >
                 <Text align={{ base: 'center', md: 'center', lg: 'center' }} >You will earn  <Text as={"span"} fontWeight={700} fontSize={{base:16, md:20, lg:20}}>₹ {payload.length > 0 && payload.length*10} Good Points</Text> as cashback on this order.</Text>
                 <Text  display={{ base: 'none', md: 'block', lg: 'block' }}   align={{ base: 'center', md: 'center', lg: 'center' }}  >GRAND TOTAL <Text as={"span"} fontWeight={700} fontSize={{base:16, md:20, lg:20}} >₹ {Total}</Text></Text>
             </Flex>
