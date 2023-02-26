@@ -6,34 +6,13 @@ import desktop from '../../Assets/desktop.png'
 import desktop_banner from '../../Assets/mens/desktop_banner.png'
 import logo_dt from '../../Assets/mens/logo_dt.png'
 import { brands_logo } from '../../all data/mens'
+import { Link } from 'react-router-dom'
 
 const Men = () => {
-  console.log(mens_top_cat)
+  // console.log(mens_top_cat)
   return (
     <div>
-      <div className="flex items-center justify-end px-3 border-b gap-x-4">
-        <div className="h-[25px] border border-gray-400 hidden lg:block ">
-          {' '}
-        </div>
-        <p>Marketplace</p>
-        <div className="h-[25px] border border-gray-400 hidden lg:block ">
-          {' '}
-        </div>
-        <p>Help&FAQs</p>
-        <div className="h-[25px] border border-gray-400 hidden lg:block ">
-          {' '}
-        </div>
-        <div className="h-[20px] hover:border-2 hover:bg-blue-500 w-[30px] rounded-3xl ">
-          <img
-            className="h-[100%] object-cover  rounded-3xl w-[100%]  "
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/383px-Flag_of_the_United_States.svg.png"
-            alt=""
-          />
-        </div>
-        <div className="h-[25px] border border-gray-400 hidden lg:block ">
-          {' '}
-        </div>
-      </div>
+    
 
       <div className="flex justify-around text-center font-semibold mb-[2px] text-xs sm:text-base">
         <p className=" cursor-pointer hover:border-2 border-gray-500 bg-[#ff385c] w-[100%]">
@@ -72,12 +51,9 @@ const Men = () => {
           The North Face
         </p>
 
-        <a href="#">
-          {' '}
-          <div className="bg-slate-100 font-bold text-sm hover:text-slate-100 hover:bg-black duration-300  px-10 lg:py-2 relative top-[1rem] md:top-2 sm:top-5">
-            SHOP NOW
-          </div>
-        </a>
+        <Link to="/products/mens"><div className="bg-slate-100 font-bold text-sm hover:text-slate-100 hover:bg-black duration-300  px-10 lg:py-2 relative top-[1rem] md:top-2 sm:top-5">
+        SHOP NOW
+      </div></Link>
       </div>
 
       <div className="grid items-center justify-center px-5 m-auto text-center sm:grid-cols-4 gap-x-5">
@@ -108,12 +84,9 @@ const Men = () => {
             Jackets, jeans shirts - your essentials are here
           </p>
         </div>
-        <a href="#">
-          {' '}
-          <div className="px-10 lg:py-[6px] lg:mt-5 sm:mt-2 lg:text-xl font-bold duration-300 bg-[#ff5400] hover:text-[#ff5400] hover:bg-slate-100 ">
-            SHOP NOW
-          </div>
-        </a>
+       <Link to="/products/mens">  <div className="px-10 lg:py-[6px] lg:mt-5 sm:mt-2 lg:text-xl font-bold duration-300 bg-[#ff5400] hover:text-[#ff5400] hover:bg-slate-100 ">
+       SHOP NOW
+     </div></Link>
       </div>
 
       <div className="flex flex-col items-center justify-center text-center sm:justify-around gap-y-5 sm:flex-row">
@@ -128,9 +101,11 @@ const Men = () => {
                 <p className="font-bold lg:text-3xl">{title}</p>
                 <p className="text-xl font-normal">{desc}</p>
               </div>
+              <Link to="/products/mens">
               <button className="px-10 py-2 mt-5 text-xl font-semibold duration-300 border-2 border-black hover:bg-black hover:text-slate-50">
                 SHOP THE BRAND
               </button>
+              </Link>
             </div>
           )
         })}
