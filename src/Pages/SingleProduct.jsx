@@ -34,7 +34,7 @@ const SingleProduct = () => {
     const {brand, discount, image, price, product, strike, _id } = obj
     
     const postToBag = () =>{
-        // console.log('obj:', obj)
+        console.log('obj:', obj)
         axios.post(`https://long-boa-sun-hat.cyclic.app/bag`,obj)
         .then((res)=>navigate(`/products/cart`))
         .catch((Error)=>(<h1>{Error.message}</h1>))
