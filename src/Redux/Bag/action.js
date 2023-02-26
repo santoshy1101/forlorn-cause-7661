@@ -7,7 +7,7 @@ export const getBagData = ()=> (dispatch)=>
 {
     dispatch({type: types.GET_BAG_REQUEST})
     return axios
-        .get("https://mywardrob-database-versel-phi.vercel.app/Bag")
+        .get("https://long-boa-sun-hat.cyclic.app/bag")
         .then(res=>{
             dispatch({type: types.GET_BAG_SUCCESS, payload: res.data})
             // console.log(res.data)
@@ -18,10 +18,10 @@ export const getBagData = ()=> (dispatch)=>
 // delete bag function -
 export const deleteBagData = (id)=> (dispatch)=>
 {
-    // console.log(id)
+     console.log(id)
     dispatch({type: types.DELETE_BAG_REQUEST})
     return axios
-        .delete(`https://mywardrob-database-versel-phi.vercel.app/Bag/${id}`)
+        .delete(`https://long-boa-sun-hat.cyclic.app/bag/${id}`)
         .then((res)=>{
             dispatch({type: types.DELETE_BAG_SUCCESS, payload: res.data})
         })
