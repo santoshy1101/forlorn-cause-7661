@@ -3,10 +3,9 @@
  
 
 ##  Contributors 
-
- Santosh Yadav.
- 
  swarup kadoli.
+ 
+ Santosh Yadav.
  
  Abhishek Chatterjee.
  
@@ -74,24 +73,23 @@ Glimpse and Screenshots of our cloned website:
 ## Navbar:
 
 - This is the landing page of our website. Clicking an option on the Navbar will redirect to the respective page.
-<img width="50%" src="./src/Assets/nevbar.png">
+<img width="50%" src="">
+- 
+<img width="50%" src="">
 
 ## Home Page:
 
 - The images on the home page are linked to all Pages. Hence clicking on it will ensure successful redirection to the next Page.
 
 - 
-<img width="50%" src="./src/Assets/homemen.png">
-
-- 
-<img width="50%" src="./src/Assets/homewomen.png">
+<img width="50%" src="">
 
 ## Footer bar:
 - Here we have functions such as Indiamart official social media link, contacts, policies, and information. account, and address.
 
+ 
 - 
-<img width="50%" src="./src/Assets/footer.png">
-
+<img width="50%" src="">
 ## Signup:
 
 - Here we have a Modal Function on any page when users click on signup they get a popup on the screen  .
@@ -99,7 +97,7 @@ Glimpse and Screenshots of our cloned website:
 - 
 <br />
 
-<img width="50%" src="./src/Assets/userSignup.png">
+<img width="50%" src="">
 
 ## Login page:
 
@@ -107,7 +105,7 @@ Glimpse and Screenshots of our cloned website:
 - User can Login with regestered email ID
 - 
 <br />
-<img width="50%" src="./src/Assets/userLogin.png">
+<img width="50%" src="">
 
 ## Product Page:
 
@@ -128,20 +126,11 @@ Glimpse and Screenshots of our cloned website:
    <img width="30%" src="./src/Assets/SingleProduct.png">
  
 
-## Cart Page:
-
-   <img width="30%" src="./src/Assets/cart.png">
-
-## Checkout Page:
-
-   <img width="30%" src="./src/Assets/checkout.png">
- 
 
 ## Admin:
 
 - 
-<img width="50%" src="./src/Assets/adminlogin.png">
-- 
-<img width="50%" src="./src/Assets/adminpanel.png">
+
+<img width="50%" src="">
 
 - Technically Help is the last page developed for the best User Interface UI smooth Operations.
