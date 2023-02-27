@@ -29,7 +29,7 @@ Hello everyone, this is a Readme for our construct week project that has been co
  
 
 ### Deployed Links:
-- https://
+- https://wearly.vercel.app/
 
 ### Backend Links:
 - Deployment :
