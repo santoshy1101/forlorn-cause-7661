@@ -21,7 +21,7 @@ export const SignUp = () => {
   
     const [values, setValues] = useState(initialState);
       const toast = useToast();
-
+  const navigate = useNavigate();
       const handleSubmit = () => {
         const payload = {
           name: values.name,
@@ -44,6 +44,7 @@ export const SignUp = () => {
                         position: 'top',
                         description: `${res.data.message}`,
                       })
+                      navigate("/user/login");
                       setValues(initialState);
                 }
                 
@@ -80,7 +81,7 @@ export const SignUp = () => {
             }
           />
           <InputControl
-            label="Confirm Password"
+            label="Password"
             type="password"
             value={values.password}
             placeholder="Enter Your Password"
@@ -90,7 +91,7 @@ export const SignUp = () => {
           />
 
           <InputControl
-            label="Password"
+            label="Confirm Password"
             type="password"
             value={values.password_confirmation}
             placeholder="Enter Your Password"
@@ -107,7 +108,7 @@ export const SignUp = () => {
             <p>
                Have an account ?{" "}
               <span>
-                <Link to="/signup">Login</Link>
+                <Link to="/user/login">Login</Link>
               </span>
             </p>
           </div>

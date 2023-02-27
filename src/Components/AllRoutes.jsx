@@ -9,6 +9,8 @@ import WomensProducts from "../Pages/ProductPages/WomensProducts";
 import FullPage from "../Pages/AdminPage/FullPage";
 import LoginAdmin from "../Pages/AdminPage/LoginAdmin";
 import PrivateRoute from "../Pages/AdminPage/PrivateRoute";
+import { Login } from "../Pages/Login/Login";
+import { SignUp } from "../Pages/SignupPage/Signup";
 
 const AllRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const AllRoutes = () => {
       <Route path="/products/womens" element={<WomensProducts />} />
       <Route path="/products/cart" element={<Bag />} />
       <Route path="/products/cart/checkout" element={<Checkout />} />
+      <Route path="/user/login" element={<Login/>} />
+      <Route path="/user/signup" element={<SignUp/>} />
       {/* :ID gives you changed value */}
       <Route path="/singleproduct/:id" element={<SingleProduct />} />
       <Route path="/edit/:id"></Route>

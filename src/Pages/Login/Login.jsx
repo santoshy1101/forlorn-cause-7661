@@ -19,6 +19,7 @@ export const Login = () => {
     const [values, setValues] = useState(initialState);
       const toast = useToast();
       const dispatch = useDispatch();
+      const navigate = useNavigate();
 
       const handleSubmit = () => {
         const payload = {
@@ -41,7 +42,7 @@ export const Login = () => {
                             position: 'top',
                             description: `${res.data.message}`,
                           })
-                          console.log(res);
+                          // console.log(res);
                           setValues(initialState);
                     }else{
                         toast({
@@ -49,7 +50,8 @@ export const Login = () => {
                             position: 'top',
                             description: `${res.data.message}`,
                           })
-                          console.log(res);
+                          navigate("/");
+                          // console.log(res);
                           setValues(initialState);
                     }
                     }
@@ -100,7 +102,7 @@ export const Login = () => {
             <p>
               Don't have an account ?{" "}
               <span>
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/user/signup">Sign Up</Link>
               </span>
             </p>
           </div>

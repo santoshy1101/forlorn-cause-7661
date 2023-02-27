@@ -4,8 +4,10 @@ import  {FaUserAlt} from "react-icons/fa"
 import  {FiHeart} from "react-icons/fi"
 import  {BsBag} from "react-icons/bs"
 import  {FiSearch} from "react-icons/fi"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Button, Flex, Menu, MenuButton, MenuList } from '@chakra-ui/react';
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <div >
     <div className='hidden sm:block'>
@@ -27,7 +29,17 @@ const Navbar = () => {
         </div>
       </li>
       <ul className='flex items-center justify-between gap-x-9'>
-      <li><FaUserAlt size={20}/></li>
+      <Menu>
+        <MenuButton>
+          <li><FaUserAlt size={20}/></li>
+        </MenuButton>
+        <MenuList p="20px 10px" borderRadius="0px">
+        <Flex justifyContent="space-around" >
+          <Button bg='#FF385C' onClick={()=>navigate(`/user/signup`)}>User</Button>
+          <Button bg='#FF385C' onClick={()=>navigate(`/admin-page`)}>Admin</Button>
+        </Flex>
+        </MenuList>
+      </Menu>
       <li><FiHeart size={20}/></li>
       <Link to="/products/cart"><li><BsBag size={20}/></li></Link>
       </ul>
