@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  logo from "../../Assets/logo.png";
 import  {FaUserAlt} from "react-icons/fa"
 import  {FiHeart} from "react-icons/fi"
@@ -8,6 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button, Flex, Menu, MenuButton, MenuList } from '@chakra-ui/react';
 const Navbar = () => {
   const navigate = useNavigate()
+  const [query, setQuery] = useState("");
   return (
     <div >
     <div className='hidden sm:block'>
@@ -24,8 +25,8 @@ const Navbar = () => {
     
       <li className='hidden md:block'>
         <div className='flex  items-center outline-none  justify-between text-black lg:w-[500px]  md:w-[350px] h-[35px] bg-white  px-2 rounded-full'>
-          <input type="text" placeholder='Search for items and brands' className='w-[100%] h-[35px] outline-none  rounded-full'/> 
-          <FiSearch size={20} />
+          <input onChange={(e) => setQuery(e.target.value)} type="text" placeholder='Search for items and brands' className='w-[100%] h-[35px] outline-none  rounded-full'/> 
+          <Link to={`/products/${query}`}><FiSearch size={20} /></Link>
         </div>
       </li>
       <ul className='flex items-center justify-between gap-x-9'>
