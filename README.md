@@ -37,7 +37,7 @@ Hello everyone, this is a Readme for our construct week project that has been co
 - Repository :
 - https://github.com/swarup-1/asos-backend
 - Repository for Login and SignUP :
--https://github.com/abhishek1337chatterjee/asos-login-signup-backend
+- https://github.com/abhishek1337chatterjee/asos-login-signup-backend
  
  
 
@@ -74,23 +74,23 @@ Glimpse and Screenshots of our cloned website:
 ## Navbar:
 
 - This is the landing page of our website. Clicking an option on the Navbar will redirect to the respective page.
-<img width="50%" src="./Frontend/src/Assets/nevbar.png">
+<img width="70%" src="./Frontend/src/Assets/nevbar.png">
 
 ## Home Page:
 
 - The images on the home page are linked to all Pages. Hence clicking on it will ensure successful redirection to the next Page.
 
 - 
-<img width="50%" src="./Frontend/src/Assets/homemen.png">
+<img width="60%" src="./Frontend/src/Assets/homemen.png">
 
 - 
-<img width="50%" src="./Frontend/src/Assets/homewomen.png">
+<img width="60%" src="./Frontend/src/Assets/homewomen.png">
 
 ## Footer bar:
 - Here we have functions such as Indiamart official social media link, contacts, policies, and information. account, and address.
 
 - 
-<img width="50%" src="./Frontend/src/Assets/footer.png">
+<img width="60%" src="./Frontend/src/Assets/footer.png">
 
 ## Signup:
 
@@ -99,7 +99,7 @@ Glimpse and Screenshots of our cloned website:
 - 
 <br />
 
-<img width="50%" src="./Frontend/src/Assets/userSignup.png">
+<img width="60%" src="./Frontend/src/Assets/userSignup.png">
 
 ## Login page:
 
@@ -107,41 +107,41 @@ Glimpse and Screenshots of our cloned website:
 - User can Login with regestered email ID
 - 
 <br />
-<img width="50%" src="./Frontend/src/Assets/userLogin.png">
+<img width="60%" src="./Frontend/src/Assets/userLogin.png">
 
 ## Product Page:
 
 
 - Mens Page :
 
-   <img width="30%" src="./Frontend/src/Assets/menPage.png">
+   <img width="60%" src="./Frontend/src/Assets/menPage.png">
 
 - Womens Page :
 
-   <img width="30%" src="./Frontend/src/Assets/womenPage.png">
+   <img width="60%" src="./Frontend/src/Assets/womenPage.png">
 <br />
 
 ## Product Detailes Page:
 
-   <img width="30%" src="./Frontend/src/Assets/SingleProduct2.png">
+   <img width="60%" src="./Frontend/src/Assets/SingleProduct2.png">
 
-   <img width="30%" src="./Frontend/src/Assets/SingleProduct.png">
+   <img width="60%" src="./Frontend/src/Assets/SingleProduct.png">
  
 
 ## Cart Page:
 
-   <img width="30%" src="./Frontend/src/Assets/cart.png">
+   <img width="60%" src="./Frontend/src/Assets/cart.png">
 
 ## Checkout Page:
 
-   <img width="30%" src="./Frontend/src/Assets/checkout.png">
+   <img width="60%" src="./Frontend/src/Assets/checkout.png">
  
 
 ## Admin:
 
 - 
-<img width="50%" src="./Frontend/src/Assets/adminlogin.png">
+<img width="60%" src="./Frontend/src/Assets/adminlogin.png">
 - 
-<img width="50%" src="./Frontend/src/Assets/adminpanel.png">
+<img width="60%" src="./Frontend/src/Assets/adminpanel.png">
 
 - Technically Help is the last page developed for the best User Interface UI smooth Operations.
