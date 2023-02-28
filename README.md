@@ -137,9 +137,7 @@ Glimpse and Screenshots of our cloned website:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/107991675/221771083-210d0337-5172-480b-aa6f-d6c79b8e008b.png">- 
 
 
-![Uploading image.p<img width="944" alt="image" src="https://user-images.githubusercontent.com/107991675/221771398-219941d0-86f9-4392-99a1-45f3760e83a4.png">
-ng…]()
-
+<img width="944" alt="image" src="https://user-images.githubusercontent.com/107991675/221771506-86f643db-2cb5-4dd7-8d33-0cc3da907945.png">
 
 
 - Technically Help is the last page developed for the best User Interface UI smooth Operations.
