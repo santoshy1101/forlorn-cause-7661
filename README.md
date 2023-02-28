@@ -53,8 +53,8 @@ can be used to discover the latest fashion trends with ASOS. Shop the new collec
 
 
 - Our LOGO :
+![Wearly_light](https://user-images.githubusercontent.com/107991675/221765782-4fc6dd80-fbe7-40f7-b7de-8c421970d10d.png)
 
-   <img width="30%" src="./Frontend/src/Assets/Wearly_dark.png">
 <br />
 
 
@@ -75,23 +75,20 @@ Glimpse and Screenshots of our cloned website:
 ## Navbar:
 
 - This is the landing page of our website. Clicking an option on the Navbar will redirect to the respective page.
-<img width="70%" src="./Frontend/src/Assets/nevbar.png">
+<img width="949" alt="28 02 2023_11 22 18_REC" src="https://user-images.githubusercontent.com/107991675/221766320-3db6154d-cf1c-4fdc-bdf2-f7db960e296b.png">
+
 
 ## Home Page:
 
 - The images on the home page are linked to all Pages. Hence clicking on it will ensure successful redirection to the next Page.
 
-- 
-<img width="60%" src="./Frontend/src/Assets/homemen.png">
+<img width="952" alt="28 02 2023_11 23 14_REC" src="https://user-images.githubusercontent.com/107991675/221766357-95943bd8-8f44-466c-8dc3-53a8bc369499.png">
 
-- 
-<img width="60%" src="./Frontend/src/Assets/homewomen.png">
 
 ## Footer bar:
 - Here we have functions such as Indiamart official social media link, contacts, policies, and information. account, and address.
 
-- 
-<img width="60%" src="./Frontend/src/Assets/footer.png">
+<img width="946" alt="image" src="https://user-images.githubusercontent.com/107991675/221766695-234002a8-4be5-464e-af4c-3c4b96637969.png">
 
 ## Signup:
 
@@ -100,7 +97,7 @@ Glimpse and Screenshots of our cloned website:
 - 
 <br />
 
-<img width="60%" src="./Frontend/src/Assets/userSignup.png">
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221767093-c98a2d81-cbcf-4748-987e-439573982cd8.png">
 
 ## Login page:
 
@@ -108,18 +105,18 @@ Glimpse and Screenshots of our cloned website:
 - User can Login with regestered email ID
 - 
 <br />
-<img width="60%" src="./Frontend/src/Assets/userLogin.png">
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221767190-0d3d412f-d0d3-4c4c-b8e2-26c30576a07a.png">
 
 ## Product Page:
 
 
 - Mens Page :
 
-   <img width="60%" src="./Frontend/src/Assets/menPage.png">
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221767960-fe106cc6-ddea-4882-8914-d3f2fc8224b8.png">
 
 - Womens Page :
 
-   <img width="60%" src="./Frontend/src/Assets/womenPage.png">
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/107991675/221768210-47a272ca-2f28-4032-8574-9ec0a3acce44.png">
 <br />
 
 ## Product Detailes Page:
