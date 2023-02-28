@@ -105,14 +105,14 @@ Glimpse and Screenshots of our cloned website:
 - User can Login with regestered email ID
 - 
 <br />
-<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221767190-0d3d412f-d0d3-4c4c-b8e2-26c30576a07a.png">
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221770220-b0c72637-ffaa-4cb6-b415-480cef7e741c.png">
+
 
 ## Product Page:
 
 
 - Mens Page :
-
-<img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221767960-fe106cc6-ddea-4882-8914-d3f2fc8224b8.png">
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/107991675/221770416-9a235f70-1706-424d-9df2-3511e82f4e0c.png">
 
 - Womens Page :
 
@@ -120,26 +120,26 @@ Glimpse and Screenshots of our cloned website:
 <br />
 
 ## Product Detailes Page:
-
-   <img width="60%" src="./Frontend/src/Assets/SingleProduct2.png">
-
-   <img width="60%" src="./Frontend/src/Assets/SingleProduct.png">
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/107991675/221770579-6aabf874-6dd0-4b83-89fd-84a48fc4d0ab.png">
  
 
 ## Cart Page:
 
-   <img width="60%" src="./Frontend/src/Assets/cart.png">
+   <img width="943" alt="image" src="https://user-images.githubusercontent.com/107991675/221770776-47d786fb-f4c3-4588-a635-b8ddb27303ab.png">
 
 ## Checkout Page:
 
-   <img width="60%" src="./Frontend/src/Assets/checkout.png">
- 
+ <img width="931" alt="image" src="https://user-images.githubusercontent.com/107991675/221770889-8dc22965-53ba-4840-928c-c2fc6c2c015e.png">
 
 ## Admin:
 
 - 
-<img width="60%" src="./Frontend/src/Assets/adminlogin.png">
-- 
-<img width="60%" src="./Frontend/src/Assets/adminpanel.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/107991675/221771083-210d0337-5172-480b-aa6f-d6c79b8e008b.png">- 
+
+
+![Uploading image.p<img width="944" alt="image" src="https://user-images.githubusercontent.com/107991675/221771398-219941d0-86f9-4392-99a1-45f3760e83a4.png">
+ng…]()
+
+
 
 - Technically Help is the last page developed for the best User Interface UI smooth Operations.
