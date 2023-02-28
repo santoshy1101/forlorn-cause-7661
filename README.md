@@ -49,7 +49,8 @@ can be used to discover the latest fashion trends with ASOS. Shop the new collec
 
 - Original LOGO :
 
-   <img width="30%" src="./Frontend/src/Assets/OriginalLogo.PNG"> 
+![download](https://user-images.githubusercontent.com/107991675/221765668-c51b9fd6-86f3-4eeb-9d2f-de64acca1062.svg)
+
 
 - Our LOGO :
 
